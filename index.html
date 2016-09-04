@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walk-A-Thon Donations</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+	  <div class="row">
+		  <div class="col-sm-6 col-md-5 col-md-offset-1">
+				<table class="table table-bordered table-striped pull-left">
+					<caption>Donor Information</caption>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Pledge</th>
+							<th>Sump / Per lap</th>
+						</tr>
+					</thead>
+					<tbody id="data">
+						
+					</tbody>
+				</table>
+		  </div>
+		  <div class="col-sm-6 col-md-5">
+				<form class="pull-right">
+					<fieldset>
+						<legend>Donation Form</legend>
+						<p><label>First Name:<input type="text" id="first-name"></label></p>
+						<p><label>Last Name:<input type="text" id="last-name"></label></p>
+						<p><label>Email:<input type="email" id="email"></label></p>
+						<p><label>Pledge Amount:<input type="number" id="pledge"></label></p>
+						<select id="pledge-calc" value="">Donation Type:
+							<option disabled selected value> -- select an option -- </option>
+							<option value="sump">Single Amount</option>
+							<option value="per-lap">Per Lap</option>
+						</select>
+						<div>
+							<button id="submit">Donate</button>
+							<button id="cancel">Cancel</button>
+						</div>
+					</fieldset>
+				</form>
+		  </div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="DOMhandler.js"></script>
+</body>
+</html>
